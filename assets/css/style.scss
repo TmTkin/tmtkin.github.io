@@ -57,6 +57,10 @@ footer small {
   color: #9aa0a6;
 }
 
+footer p:first-child {
+  display: none;
+}
+
 @media screen and (min-width: 961px) {
   div.wrapper {
     width: calc(100% - 64px);
