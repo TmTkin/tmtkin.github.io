@@ -9,8 +9,16 @@ title: ホーム
 中の人（[ともた@TmTkin](https://fedibird.com/@TmTkin)）のX（旧Twitter）とMastodonの投稿を学習した、マルコフ連鎖Botです。
 ランダムな時間に投稿し、返信にも対応しています。
 
-## 活動場所
+### 活動場所
 Mastodon: [fedibird.com](https://fedibird.com/about)
+
+### 最近の投稿
+
+<div id="mastodon-posts" class="mastodon-posts" aria-live="polite" aria-busy="true">
+	<p>投稿を読み込み中...</p>
+</div>
+
+<p class="mastodon-profile-link"><a href="https://fedibird.com/@BoTmTkin">Fedibirdですべての投稿を見る</a></p>
 
 <a class="image-lightbox-trigger" href="/assets/images/BoTmTkin_v0.2.png"><img src="/assets/images/BoTmTkin_v0.2.png" alt="ボッともたv0.2" width="240"></a>
 
@@ -43,4 +51,5 @@ Mastodon: [fedibird.com](https://fedibird.com/about)
 </dialog>
 
 <script src="/assets/js/lightbox.js" defer></script>
+<script src="/assets/js/mastodon-posts.js" defer></script>
 

@@ -93,6 +93,50 @@ footer small {
   height: auto;
 }
 
+.mastodon-posts {
+  border-top: 1px solid #3b4245;
+  margin: 0.75em 0;
+}
+
+.mastodon-status {
+  border-bottom: 1px solid #3b4245;
+  padding: 0.8em 0;
+}
+
+.mastodon-status time {
+  color: #9aa0a6;
+  font-size: 0.85em;
+}
+
+.mastodon-status p {
+  margin: 0.45em 0 0;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.mastodon-status-content img {
+  width: 1.25em;
+  height: 1.25em;
+  margin: 0 0.08em;
+  object-fit: contain;
+  vertical-align: -0.25em;
+}
+
+.mastodon-status-content {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.mastodon-cw {
+  color: #aecbfa;
+}
+
+.mastodon-profile-link {
+  margin-top: 0.5em;
+}
+
 details summary {
   cursor: pointer;
   padding: 0.6em 0.8em;
