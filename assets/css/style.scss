@@ -2,7 +2,157 @@
 ---
 @import "{{ site.theme }}";
 
+:root {
+  color-scheme: dark;
+}
+
 body {
-  background-color: #f2f3f0;
-  color: #303633;
+  background-color: #181a1b;
+  color: #d5d9dc;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+th,
+dt {
+  color: #f1f3f4;
+}
+
+a {
+  color: #8ab4f8;
+}
+
+a:hover {
+  color: #aecbfa;
+}
+
+hr,
+th,
+td {
+  border-color: #3b4245;
+}
+
+hr {
+  background-color: #3b4245;
+}
+
+blockquote {
+  border-color: #3b4245;
+}
+
+code,
+pre {
+  color: #e8eaed;
+  background-color: #24282a;
+}
+
+footer,
+footer p,
+footer small {
+  color: #9aa0a6;
+}
+
+@media screen and (min-width: 961px) {
+  div.wrapper {
+    width: calc(100% - 64px);
+    max-width: 940px;
+  }
+
+  header,
+  section,
+  footer {
+    float: none;
+    position: static;
+    width: auto;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  section {
+    border: 1px solid #3b4245;
+    border-width: 1px 0;
+    padding: 24px 0;
+    margin: 0 0 20px;
+  }
+}
+
+.image-lightbox-trigger {
+  cursor: zoom-in;
+}
+
+.image-lightbox-trigger img {
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+}
+
+details summary {
+  cursor: pointer;
+  padding: 0.6em 0.8em;
+  color: #e8eaed;
+  font-weight: 600;
+  background-color: #24282a;
+  border: 1px solid #3b4245;
+  border-left: 4px solid #8ab4f8;
+}
+
+details summary:hover {
+  background-color: #303639;
+}
+
+details summary:focus-visible {
+  outline: 2px solid #aecbfa;
+  outline-offset: 2px;
+}
+
+details[open] summary {
+  margin-bottom: 0.8em;
+}
+
+.image-lightbox {
+  position: fixed;
+  max-width: 96vw;
+  max-height: 94vh;
+  padding: 48px 16px 16px;
+  border: 1px solid #596367;
+  background: #181a1b;
+  color: #fff;
+}
+
+.image-lightbox::backdrop {
+  background: rgba(15, 20, 17, 0.82);
+}
+
+.image-lightbox img {
+  display: block;
+  max-width: calc(96vw - 34px);
+  max-height: calc(94vh - 66px);
+  margin: auto;
+  object-fit: contain;
+}
+
+.image-lightbox-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.image-lightbox-close:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
